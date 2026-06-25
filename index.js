@@ -48,7 +48,7 @@ app.use(express.urlencoded({ extended: true }));
 // Define CORS configuration options
 const corsOptions = {
     // Allow requests only from this frontend
-    origin: ['http://localhost:8000'],
+    origin: ['http://localhost:8000', 'https://course-booking-app-psi.vercel.app'],
     // Allow cookies, authorization headers, or login sessions
     credentials: true,
     // Use 200 to tell the browser it's OK to continue the request because some browsers fail if its not 200
