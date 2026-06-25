@@ -81,7 +81,7 @@ router.get("/failed", (req, res) => {
 })
 
 // Success route if the authentication is successful
-router.get("/success",isLoggedIn, (req, res) => {
+router.get("/success",verify, (req, res) => {
     console.log('You are logged in');
     res.send(`Welcome ${req.user.displayName}`)
 })
